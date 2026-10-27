@@ -1,0 +1,357 @@
+{
+  "updated": "2026-10-27",
+  "self": { "en": "Heng Qiao", "zh": "乔恒" },
+  "sections": [
+    {
+      "id": "auction-theory",
+      "nav": "Auction Theory",
+      "title": "Auction Theory and Contests",
+      "blurb": "Sequential and all-pay auctions, revenue equivalence, contest design, and the role of beliefs in strategic interaction."
+    },
+    {
+      "id": "applied-economics",
+      "nav": "Applied Economics",
+      "title": "Applied Economics and Interdisciplinary Research",
+      "blurb": "Energy prices, emission-reduction policy, agricultural productivity, insurance and growth, project management in aircraft development, and visual comfort in stereoscopic displays."
+    },
+    {
+      "id": "economic-history",
+      "nav": "Economic History",
+      "title": "Economic History and Institutions",
+      "blurb": "Book-length studies of China's fiscal, financial, and institutional history."
+    }
+  ],
+  "items": [
+    {
+      "id": "J1",
+      "section": "auction-theory",
+      "type": "article",
+      "year": 2016,
+      "title": "The Changing of Common Priors in Sequential Auctions",
+      "authors": ["Heng Qiao", "Jun Ma"],
+      "venue": "Journal of Systems Science and Complexity",
+      "volume": "29",
+      "issue": "5",
+      "pages": "1342–1357",
+      "doi": "10.1007/s11424-016-4295-1",
+      "links": [
+        { "label": "Journal page", "url": "https://sysmath.cjoe.ac.cn/jssc/EN/10.1007/s11424-016-4295-1" }
+      ]
+    },
+    {
+      "id": "J2",
+      "section": "auction-theory",
+      "type": "article",
+      "year": 2016,
+      "language": "zh",
+      "title": "Strategic Belief Interaction and Industrial Competition",
+      "title_zh": "信念互动与产业竞争的关系研究",
+      "authors": ["Heng Qiao"],
+      "authors_zh": ["乔恒"],
+      "venue": "Management Review",
+      "venue_zh": "管理评论",
+      "volume": "28",
+      "issue": "7",
+      "pages": "31–41",
+      "doi": "10.14120/j.cnki.cn11-5057/f.2016.07.004"
+    },
+    {
+      "id": "J3",
+      "section": "auction-theory",
+      "type": "article",
+      "year": 2007,
+      "language": "zh",
+      "title": "Model Design and Equilibrium Analysis of Increasing-Prize R&D Contests",
+      "title_zh": "递增奖品R&D竞赛的模型设计与均衡分析",
+      "authors": ["Heng Qiao", "Wanhua Qiu"],
+      "authors_zh": ["乔恒", "邱菀华"],
+      "venue": "Systems Engineering: Theory & Practice",
+      "venue_zh": "系统工程理论与实践",
+      "volume": "27",
+      "issue": "4",
+      "pages": "77–80",
+      "links": [
+        { "label": "Journal page", "url": "https://sysengi.cjoe.ac.cn/CN/lexeme/showArticleByLexeme.do?articleID=34900" }
+      ]
+    },
+    {
+      "id": "J4",
+      "section": "auction-theory",
+      "type": "article",
+      "year": 2006,
+      "language": "zh",
+      "title": "Research of Revenue Equivalence of Four Kinds of Auctions",
+      "title_zh": "四类拍卖的收益等价性研究",
+      "authors": ["Heng Qiao", "Wanhua Qiu"],
+      "authors_zh": ["乔恒", "邱菀华"],
+      "venue": "Systems Engineering: Theory & Practice",
+      "venue_zh": "系统工程理论与实践",
+      "volume": "26",
+      "issue": "7",
+      "pages": "118–123",
+      "links": [
+        { "label": "Journal page", "url": "https://sysengi.cjoe.ac.cn/CN/lexeme/showArticleByLexeme.do?articleID=33205" }
+      ]
+    },
+    {
+      "id": "J5",
+      "section": "auction-theory",
+      "type": "article",
+      "year": 2006,
+      "title": "An Equilibrium Analysis of a Contest Model",
+      "authors": ["Heng Qiao", "Shulin Liu", "Kin Keung Lai", "Wanhua Qiu"],
+      "venue": "Journal of Systems Science and Information",
+      "volume": "4",
+      "issue": "2",
+      "pages": "313–322"
+    },
+    {
+      "id": "J6",
+      "section": "auction-theory",
+      "type": "article",
+      "year": 2005,
+      "language": "zh",
+      "title": "The Analysis and Comparison of the Equilibrium of All-Pay Auctions",
+      "title_zh": "两种全支付拍卖的均衡分析与比较",
+      "authors": ["Heng Qiao", "Shulin Liu", "Wanhua Qiu"],
+      "authors_zh": ["乔恒", "刘树林", "邱菀华"],
+      "venue": "Systems Engineering",
+      "venue_zh": "系统工程",
+      "issue": "S1",
+      "pages": "16–19"
+    },
+    {
+      "id": "C1",
+      "section": "auction-theory",
+      "type": "conference",
+      "year": 2006,
+      "title": "A Model of Rent-Augmenting Contest with Limited Liability",
+      "authors": ["Heng Qiao", "Wanhua Qiu"],
+      "venue": "2006 International Conference on Service Systems and Service Management (ICSSSM)",
+      "volume": "2",
+      "pages": "1062–1066",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICSSSM.2006.320655"
+    },
+    {
+      "id": "C4",
+      "section": "auction-theory",
+      "type": "conference",
+      "year": 2004,
+      "title": "Conflict between Two Criteria of Revenue and Efficiency in Two Kinds of All-Pay Auctions",
+      "authors": ["Heng Qiao", "Shulin Liu", "Wanhua Qiu"],
+      "venue": "ICIM-8, Japan"
+    },
+    {
+      "id": "S1",
+      "section": "auction-theory",
+      "type": "series",
+      "year": 2008,
+      "title": "Parallel Contests",
+      "authors": ["Erwin Amann", "Heng Qiao"],
+      "venue": "TWI Research Paper Series No. 36, Thurgauer Wirtschaftsinstitut, University of Konstanz",
+      "links": [
+        { "label": "KOPS repository", "url": "https://kops.uni-konstanz.de/entities/publication/ed3b1b8b-bcef-4ca8-81fa-353f0d2dc90e" }
+      ]
+    },
+    {
+      "id": "S2",
+      "section": "auction-theory",
+      "type": "series",
+      "year": 2008,
+      "title": "Three Sequential Cases: From Symmetry to Asymmetry",
+      "authors": ["Erwin Amann", "Heng Qiao"],
+      "venue": "TWI Research Paper Series No. 37, Thurgauer Wirtschaftsinstitut, University of Konstanz",
+      "links": [
+        { "label": "KOPS repository", "url": "https://kops.uni-konstanz.de/entities/publication/0ddd3d4c-a2e6-42d4-9c27-dd0c8c27d85d" }
+      ]
+    },
+    {
+      "id": "S3",
+      "section": "auction-theory",
+      "type": "series",
+      "year": 2011,
+      "title": "A Model of Belief Control",
+      "authors": ["Heng Qiao"],
+      "venue": "WZB Research Series: Alliances and Alliance Formation in Conflict, WZB Berlin Social Science Center"
+    },
+    {
+      "id": "B2",
+      "section": "applied-economics",
+      "type": "book",
+      "year": 2025,
+      "month": "May",
+      "language": "zh",
+      "title": "Project-Management Maturity, Risk, and Decisions in Wide-Body Aircraft Development",
+      "title_zh": "远程宽体客机研制项目管理成熟度模型及风险决策与应用",
+      "authors": ["Wanhua Qiu", "Heng Qiao"],
+      "authors_zh": ["邱菀华", "乔恒"],
+      "publisher": "Science Press, Beijing",
+      "publisher_zh": "科学出版社",
+      "pages_total": 185,
+      "isbn": "978-7-03-081187-5"
+    },
+    {
+      "id": "J7",
+      "section": "applied-economics",
+      "type": "article",
+      "year": 2014,
+      "title": "Dynamic Price Model Based on Transmission Delay: Petroleum Price Fluctuation in China",
+      "authors": ["Yifang Liu", "Yue Wang", "Heng Qiao"],
+      "venue": "Journal of Systems Science and Complexity",
+      "volume": "27",
+      "issue": "3",
+      "pages": "507–523",
+      "doi": "10.1007/s11424-014-3272-9",
+      "links": [
+        { "label": "Journal page", "url": "https://sysmath.cjoe.ac.cn/jssc/EN/10.1007/s11424-014-3272-9" }
+      ]
+    },
+    {
+      "id": "J8",
+      "section": "applied-economics",
+      "type": "article",
+      "year": 2014,
+      "title": "Evaluation of Stereoscopic Visual Fatigue in Experts",
+      "authors": ["Danli Wang", "Yunfeng Qi", "Tingting Wang", "Heng Qiao", "Yining Shi", "Lan Zhang"],
+      "venue": "Journal of the Society for Information Display",
+      "volume": "22",
+      "issue": "8",
+      "pages": "437–447",
+      "doi": "10.1002/jsid.266",
+      "links": [
+        { "label": "Publisher page", "url": "https://sid.onlinelibrary.wiley.com/doi/10.1002/jsid.266" }
+      ]
+    },
+    {
+      "id": "J9",
+      "section": "applied-economics",
+      "type": "article",
+      "year": 2016,
+      "title": "The Effects of Disparity Cue and Blur Cue on the Relative Visual Comfort of Stereoscopic Content",
+      "authors": ["Yaohua Xie", "Fang Sun", "Danli Wang", "Heng Qiao"],
+      "venue": "Journal of Imaging Science and Technology",
+      "volume": "60",
+      "issue": "1",
+      "pages": "010403-1–5",
+      "doi": "10.2352/J.ImagingSci.Technol.2016.60.1.010403",
+      "links": [
+        { "label": "Publisher page", "url": "https://library.imaging.org/jist/articles/60/1/jist0126" }
+      ],
+      "conference_version": {
+        "id": "C2",
+        "venue": "Electronic Imaging",
+        "year": 2016,
+        "detail": "2016 (13), IQSP-210, 1–5",
+        "doi": "10.2352/ISSN.2470-1173.2016.13.IQSP-210",
+        "url": "https://library.imaging.org/ei/articles/28/13/art00013"
+      }
+    },
+    {
+      "id": "J10",
+      "section": "applied-economics",
+      "type": "article",
+      "year": 2017,
+      "title": "The Effects of Proximity Cues on Visual Comfort When Viewing Stereoscopic Content",
+      "authors": ["Yaohua Xie", "Danli Wang", "Heng Qiao"],
+      "venue": "Journal of Imaging Science and Technology",
+      "volume": "61",
+      "issue": "1",
+      "pages": "010402-1–11",
+      "doi": "10.2352/J.ImagingSci.Technol.2017.61.1.010402",
+      "links": [
+        { "label": "Publisher page", "url": "https://library.imaging.org/jist/articles/61/1/jist0269" }
+      ],
+      "conference_version": {
+        "id": "C3",
+        "venue": "Electronic Imaging",
+        "year": 2017,
+        "detail": "2017 (5), SDA-381, 85–95",
+        "doi": "10.2352/ISSN.2470-1173.2017.5.SDA-381",
+        "url": "https://library.imaging.org/ei/articles/29/5/art00011"
+      }
+    },
+    {
+      "id": "J11",
+      "section": "applied-economics",
+      "type": "article",
+      "year": 2014,
+      "title": "Structural Decomposition Analysis and Evaluation of the Chinese Emission Reduction Policy: Changes in SO2 Emission from 2001 to 2010",
+      "authors": ["Wei Zhang", "Heng Qiao", "Yanchun Zhu"],
+      "venue": "Journal of Applied Sciences",
+      "volume": "14",
+      "issue": "6",
+      "pages": "573–579",
+      "doi": "10.3923/jas.2014.573.579",
+      "links": [
+        { "label": "Publisher page", "url": "https://scialert.net/fulltext/?doi=jas.2014.573.579" }
+      ]
+    },
+    {
+      "id": "J12",
+      "section": "applied-economics",
+      "type": "article",
+      "year": 2015,
+      "language": "zh",
+      "title": "Structural Changes and Regional Differences of China’s Agricultural Productivity Development",
+      "title_zh": "我国农业生产效率发展的结构变化和区域差异",
+      "authors": ["Heng Qiao", "Xin Guo", "Dacheng Cao", "Fan Sun"],
+      "authors_zh": ["乔恒", "郭昕", "曹大澂", "孙凡"],
+      "venue": "Journal of Huazhong Agricultural University (Social Sciences Edition)",
+      "venue_zh": "华中农业大学学报（社会科学版）",
+      "issue": "1",
+      "pages": "23–29",
+      "doi": "10.13300/j.cnki.hnwkxb.2015.01.004",
+      "links": [
+        { "label": "Journal page", "url": "http://hnxbl.cnjournals.net/hznydxsk/article/abstract/20150104" }
+      ]
+    },
+    {
+      "id": "J13",
+      "section": "applied-economics",
+      "type": "article",
+      "year": 2019,
+      "language": "zh",
+      "title": "Insurance Serving Economic Growth: Paths and Mechanisms—Multiple Time-Series Models and an EGLS-Based Bootstrap Test",
+      "title_zh": "保险业服务经济增长：路径及影响机制——多种时间序列模型和基于EGLS的bootstrap检验",
+      "authors": ["Sujin Zheng", "Heng Qiao", "Xiuye Meng"],
+      "authors_zh": ["郑苏晋", "乔恒", "蒙羞叶"],
+      "venue": "Management Review",
+      "venue_zh": "管理评论",
+      "volume": "31",
+      "issue": "6",
+      "pages": "14–22"
+    },
+    {
+      "id": "B1",
+      "section": "economic-history",
+      "type": "book",
+      "year": 2025,
+      "language": "zh",
+      "title": "An Economic Narrative of Financial and Fiscal History in the Qing Dynasty, 17th–19th Century",
+      "title_zh": "清代财政金融史叙事",
+      "authors": ["Heng Qiao"],
+      "authors_zh": ["乔恒"],
+      "publisher": "China Financial and Economic Publishing House, Beijing",
+      "publisher_zh": "中国财政经济出版社",
+      "pages_total": 308,
+      "isbn": "978-7-5223-3843-9"
+    },
+    {
+      "id": "B3",
+      "section": "economic-history",
+      "type": "book",
+      "year": 2020,
+      "month": "July",
+      "language": "zh",
+      "title": "Epistemological Manifestation of the Celestial Empire: Researches into the Millennially Cyclical Principles of Economics and Institutions",
+      "title_zh": "认识中国：千年视角下的中国经济制度演化规律",
+      "authors": ["Heng Qiao"],
+      "authors_zh": ["乔恒"],
+      "publisher": "Beijing Institute of Technology Press, Beijing",
+      "publisher_zh": "北京理工大学出版社",
+      "pages_total": 227,
+      "isbn": "978-7-5682-8691-6"
+    }
+  ]
+}
