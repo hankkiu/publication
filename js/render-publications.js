@@ -115,36 +115,76 @@
       a.id.localeCompare(b.id, "en", { numeric: true });
   }
 
-  function render(data) {
-    var nav = document.getElementById("section-nav-list");
-    var root = document.getElementById("publications");
-    var navHtml = "";
-    var bodyHtml = "";
+  var BACK_TOP = '<p class="back-top"><a href="#top">↑ Back to top</a></p>';
+
+  function navItem(id, label, short, count) {
+    var text = short
+      ? '<span class="nav-long">' + esc(label) + '</span><span class="nav-short">' + esc(short) + "</span>"
+      : esc(label);
+    return '<li><a href="#' + esc(id) + '" data-section="' + esc(id) + '">' +
+      text + '<span class="count">' + count + "</span></a></li>";
+  }
+
+  function workingPaperHtml(it) {
+    var html = '<li class="pub wp"><p class="pub-title">' + esc(it.title) + "</p>";
+    if (it.title_zh) html += '<p class="pub-zh" lang="zh-CN">' + esc(it.title_zh) + "</p>";
+    return html + "</li>";
+  }
+
+  function workingPapersHtml(wp) {
+    var html = '<section class="part research-section" id="' + esc(wp.id) + '">';
+    html += '<h2 class="part-title">' + esc(wp.title) + "</h2>";
+    wp.groups.forEach(function (g) {
+      html += '<h4 class="group-title">' + esc(g.title) + "</h4>";
+      html += '<ol class="pub-list">' + g.items.map(workingPaperHtml).join("") + "</ol>";
+    });
+    return html + BACK_TOP + "</section>";
+  }
+
+  function publicationsHtml(data) {
+    var html = '<div class="part" id="publications">';
+    html += '<h2 class="part-title">Publications</h2>';
+    html += '<p class="page-note">Arranged by research area; within each area, entries are grouped by type and listed from most recent. ' +
+      "Works published in Chinese are listed under their English title, followed by the original Chinese title.</p>";
 
     data.sections.forEach(function (sec) {
       var items = data.items.filter(function (it) { return it.section === sec.id; });
-      navHtml += '<li><a href="#' + esc(sec.id) + '" data-section="' + esc(sec.id) + '">' +
-        esc(sec.nav) + '<span class="count">' + items.length + "</span></a></li>";
-
-      bodyHtml += '<section class="research-section" id="' + esc(sec.id) + '">';
-      bodyHtml += "<h2>" + esc(sec.title) + "</h2>";
-      if (sec.blurb) bodyHtml += '<p class="section-blurb">' + esc(sec.blurb) + "</p>";
+      html += '<section class="research-section area" id="' + esc(sec.id) + '">';
+      html += '<h3 class="area-title">' + esc(sec.title) + "</h3>";
+      if (sec.blurb) html += '<p class="section-blurb">' + esc(sec.blurb) + "</p>";
 
       GROUPS.forEach(function (g) {
         var group = items.filter(function (it) { return it.type === g.type; }).sort(byRecency);
         if (!group.length) return;
-        bodyHtml += '<h3 class="group-title">' + g.label + "</h3>";
-        bodyHtml += '<ol class="pub-list">' + group.map(function (it) {
+        html += '<h4 class="group-title">' + g.label + "</h4>";
+        html += '<ol class="pub-list">' + group.map(function (it) {
           return entryHtml(it, data.self);
         }).join("") + "</ol>";
       });
 
-      bodyHtml += '<p class="back-top"><a href="#top">↑ Back to top</a></p>';
-      bodyHtml += "</section>";
+      html += BACK_TOP + "</section>";
     });
+    return html + "</div>";
+  }
 
-    nav.innerHTML = navHtml;
-    root.innerHTML = bodyHtml;
+  function render(data) {
+    var navHtml = "";
+    var bodyHtml = "";
+    var wp = data.working_papers;
+
+    if (wp) {
+      var wpCount = wp.groups.reduce(function (n, g) { return n + g.items.length; }, 0);
+      navHtml += navItem(wp.id, wp.nav, wp.nav_short, wpCount) + '<li class="nav-sep" aria-hidden="true"></li>';
+      bodyHtml += workingPapersHtml(wp);
+    }
+    data.sections.forEach(function (sec) {
+      var count = data.items.filter(function (it) { return it.section === sec.id; }).length;
+      navHtml += navItem(sec.id, sec.nav, sec.nav_short, count);
+    });
+    bodyHtml += publicationsHtml(data);
+
+    document.getElementById("section-nav-list").innerHTML = navHtml;
+    document.getElementById("research").innerHTML = bodyHtml;
 
     if (data.updated) {
       var d = new Date(data.updated + "T00:00:00");
@@ -188,7 +228,7 @@
     })
     .then(render)
     .catch(function () {
-      document.getElementById("publications").innerHTML =
-        '<p class="status">The publication list could not be loaded. Please refresh the page.</p>';
+      document.getElementById("research").innerHTML =
+        '<p class="status">The research list could not be loaded. Please refresh the page.</p>';
     });
 })();

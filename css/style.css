@@ -60,13 +60,6 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 2p
   letter-spacing: -0.01em;
 }
 
-.name-zh {
-  margin-left: 0.5rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--muted);
-}
-
 .tagline {
   margin: 0.6rem 0 0;
   font-family: var(--sans);
@@ -114,43 +107,58 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 2p
   border-bottom-color: var(--accent);
 }
 
+.section-nav .nav-short { display: none; }
+
+.section-nav .nav-sep {
+  align-self: center;
+  width: 1px;
+  height: 1.1rem;
+  background: var(--rule);
+}
+
 .section-nav .count {
   font-weight: 400;
   font-size: 0.85rem;
   color: var(--faint);
 }
 
-/* Page heading */
-.page-title {
-  margin: 2.5rem 0 0.5rem;
-  font-size: 1.15rem;
-  font-family: var(--sans);
+/* Parts: Working Papers, Publications */
+.part { padding-top: 0.5rem; }
+.part + .part { margin-top: 3rem; }
+
+.part-title {
+  margin: 2.25rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ink);
+  font-size: 1.85rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
 }
 
 .page-note {
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
   color: var(--muted);
   font-size: 0.95rem;
 }
 
 /* Research sections */
 .research-section {
-  padding-top: 1.5rem;
   scroll-margin-top: calc(var(--nav-h) + 0.5rem);
 }
 
-.research-section + .research-section {
+.area {
+  padding-top: 1.5rem;
+}
+
+.area + .area {
   margin-top: 1.5rem;
   border-top: 1px solid var(--rule);
 }
 
-.research-section h2 {
-  margin: 0.75rem 0 0.35rem;
-  font-size: 1.65rem;
+.area-title {
+  margin: 0.5rem 0 0.35rem;
+  font-size: 1.45rem;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -184,6 +192,8 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 2p
 }
 
 .pub:last-child { border-bottom: 0; }
+
+.pub.wp { padding: 0.7rem 0; }
 
 .pub-title {
   margin: 0;
@@ -280,7 +290,6 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 2p
   .wrap { padding: 0 1rem; }
   .masthead { padding: 2.25rem 0 1.25rem; }
   .name { font-size: 2.05rem; }
-  .name-zh { display: block; margin: 0.2rem 0 0; font-size: 1.3rem; }
   .section-nav ul {
     flex-wrap: nowrap;
     gap: 0 1rem;
@@ -289,7 +298,10 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 2p
   }
   .section-nav a { font-size: 0.88rem; white-space: nowrap; }
   .section-nav .count { display: none; }
-  .research-section h2 { font-size: 1.4rem; }
+  .section-nav .nav-long { display: none; }
+  .section-nav .nav-short { display: inline; }
+  .part-title { font-size: 1.55rem; }
+  .area-title { font-size: 1.3rem; }
 }
 
 @media print {

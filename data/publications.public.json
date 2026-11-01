@@ -1,22 +1,54 @@
 {
   "updated": "2026-10-27",
   "self": { "en": "Heng Qiao", "zh": "乔恒" },
+  "working_papers": {
+    "id": "working-papers",
+    "nav": "Working Papers",
+    "nav_short": "Papers",
+    "title": "Working Papers",
+    "groups": [
+      {
+        "title": "Applied Econometrics and Measurement",
+        "items": [
+          { "title": "Satellite Judges and Pollution Data That Are Not Missing at Random" },
+          { "title": "Domestic and International Trade Shocks: An Economic Measure of Human Standing Height" },
+          { "title": "Who Wins and Who Pays: State-Owned Bidders, Entry, and Demand Elasticity in Shanghai Residential Land Auctions" }
+        ]
+      },
+      {
+        "title": "Historical Demography",
+        "items": [
+          { "title": "Whose Deaths Entered the Life Tables? Measurement and Selection in Ming–Qing Lineage Records" },
+          { "title": "War in the Lineage Records: Adult Mortality and Registered Births during the Taiping Rebellion" }
+        ]
+      },
+      {
+        "title": "Political Theory",
+        "items": [
+          { "title": "Belief Control and the Boundaries of Political Competition", "title_zh": "信念控制与政治竞争的边界" }
+        ]
+      }
+    ]
+  },
   "sections": [
     {
       "id": "auction-theory",
       "nav": "Auction Theory",
+      "nav_short": "Auctions",
       "title": "Auction Theory and Contests",
       "blurb": "Sequential and all-pay auctions, revenue equivalence, contest design, and the role of beliefs in strategic interaction."
     },
     {
       "id": "applied-economics",
       "nav": "Applied Economics",
+      "nav_short": "Applied",
       "title": "Applied Economics and Interdisciplinary Research",
       "blurb": "Energy prices, emission-reduction policy, agricultural productivity, insurance and growth, project management in aircraft development, and visual comfort in stereoscopic displays."
     },
     {
       "id": "economic-history",
       "nav": "Economic History",
+      "nav_short": "History",
       "title": "Economic History and Institutions",
       "blurb": "Book-length studies of China's fiscal, financial, and institutional history."
     }
