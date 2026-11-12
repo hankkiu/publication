@@ -126,7 +126,7 @@
   }
 
   function workingPaperHtml(it) {
-    var html = '<li class="pub wp"><p class="pub-title">' + esc(it.title) + "</p>";
+    var html = '<li class="pub wp"' + (it.id ? ' id="' + esc(it.id) + '"' : "") + '><p class="pub-title">' + esc(it.title) + "</p>";
     if (it.title_zh) html += '<p class="pub-zh" lang="zh-CN">' + esc(it.title_zh) + "</p>";
     return html + "</li>";
   }
@@ -135,7 +135,7 @@
     var html = '<section class="part research-section" id="' + esc(wp.id) + '">';
     html += '<h2 class="part-title">' + esc(wp.title) + "</h2>";
     wp.groups.forEach(function (g) {
-      html += '<h4 class="group-title">' + esc(g.title) + "</h4>";
+      html += '<h4 class="group-title"' + (g.id ? ' id="' + esc(g.id) + '"' : "") + ">" + esc(g.title) + "</h4>";
       html += '<ol class="pub-list">' + g.items.map(workingPaperHtml).join("") + "</ol>";
     });
     return html + BACK_TOP + "</section>";
