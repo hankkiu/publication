@@ -50,7 +50,18 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 2p
 [lang="zh-CN"] { font-family: var(--cjk); }
 
 /* Masthead */
-.masthead { padding: 3.5rem 0 1.75rem; }
+.masthead { padding: 2.25rem 0 1.75rem; }
+
+.home-link {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.home-link:hover { color: var(--accent); text-decoration: none; }
 
 .name {
   margin: 0;
@@ -193,6 +204,22 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 2p
 
 .pub:last-child { border-bottom: 0; }
 
+/* Deep links from the home page land on a single entry or group. */
+.pub,
+.group-title {
+  scroll-margin-top: calc(var(--nav-h) + 1rem);
+}
+
+.pub:target {
+  margin: 0 -0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 4px;
+  background: var(--accent-soft);
+}
+
+.group-title:target { color: var(--accent); }
+
 .pub.wp { padding: 0.7rem 0; }
 
 .pub-title {
@@ -288,7 +315,8 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 2p
 @media (max-width: 600px) {
   body { font-size: 16px; }
   .wrap { padding: 0 1rem; }
-  .masthead { padding: 2.25rem 0 1.25rem; }
+  .masthead { padding: 1.5rem 0 1.25rem; }
+  .home-link { margin-bottom: 1rem; }
   .name { font-size: 2.05rem; }
   .section-nav ul {
     flex-wrap: nowrap;

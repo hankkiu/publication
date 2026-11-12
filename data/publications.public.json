@@ -8,24 +8,24 @@
     "title": "Working Papers",
     "groups": [
       {
-        "title": "Applied Econometrics and Measurement",
+        "id": "wp-applied", "title": "Applied Econometrics and Measurement",
         "items": [
-          { "title": "Satellite Judges and Pollution Data That Are Not Missing at Random" },
-          { "title": "Domestic and International Trade Shocks: An Economic Measure of Human Standing Height" },
-          { "title": "Who Wins and Who Pays: State-Owned Bidders, Entry, and Demand Elasticity in Shanghai Residential Land Auctions" }
+          { "id": "wp-pollution", "title": "Satellite Judges and Pollution Data That Are Not Missing at Random" },
+          { "id": "wp-trade-height", "title": "Domestic and International Trade Shocks: An Economic Measure of Human Standing Height" },
+          { "id": "wp-land-auctions", "title": "Who Wins and Who Pays: State-Owned Bidders, Entry, and Demand Elasticity in Shanghai Residential Land Auctions" }
         ]
       },
       {
-        "title": "Historical Demography",
+        "id": "wp-historical-demography", "title": "Historical Demography",
         "items": [
-          { "title": "Whose Deaths Entered the Life Tables? Measurement and Selection in Ming–Qing Lineage Records" },
-          { "title": "War in the Lineage Records: Adult Mortality and Registered Births during the Taiping Rebellion" }
+          { "id": "wp-life-tables", "title": "Whose Deaths Entered the Life Tables? Measurement and Selection in Ming–Qing Lineage Records" },
+          { "id": "wp-taiping", "title": "War in the Lineage Records: Adult Mortality and Registered Births during the Taiping Rebellion" }
         ]
       },
       {
-        "title": "Political Theory",
+        "id": "wp-political-theory", "title": "Political Theory",
         "items": [
-          { "title": "Belief Control and the Boundaries of Political Competition", "title_zh": "信念控制与政治竞争的边界" }
+          { "id": "wp-belief-control", "title": "Belief Control and the Boundaries of Political Competition", "title_zh": "信念控制与政治竞争的边界" }
         ]
       }
     ]
